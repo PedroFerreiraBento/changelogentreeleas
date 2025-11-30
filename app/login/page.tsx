@@ -35,6 +35,7 @@ export default function LoginPage() {
       } else {
         router.push("/");
       }
+      router.refresh();
     } catch (e) {
       setErrorMsg("Erro inesperado. Tente novamente.");
     } finally {
